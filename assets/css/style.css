@@ -1,0 +1,26 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+/* Start Variables */
+:root {
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+  --gray-color: #777;
+  --section-background-color: #f6f6f6;
+  --transition-duration: 0.3s;
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+/* End Global Rules */
