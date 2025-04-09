@@ -7,6 +7,8 @@
   --secondary-color: #2c4755;
   --gray-color: #777;
   --section-background-color: #f6f6f6;
+  --p-y: 60px;
+  --space-height: 1.8;
   --transition-duration: 0.3s;
 }
 /* End Variables */
@@ -176,7 +178,45 @@ header .links ul li:not(:last-child) a {
 }
 
 .landing .intro-text p {
-  font-size: 19px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: var(--space-height);
 }
 /* End Landing Section */
+
+/* Start Features */
+.features {
+  padding: var(--p-y) 0;
+  background-color: var(--section-background-color);
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.features .box {
+  padding: 20px;
+  text-align: center;
+}
+
+.features .box:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 5px 0px rgba(36, 39, 46, 0.1);
+}
+
+.features .box i {
+  color: var(--main-color);
+}
+
+.features .box h3 {
+  font-weight: 800;
+  margin: 20px 0;
+}
+
+.features .box p {
+  color: var(--gray-color);
+  font-size: 18px;
+  line-height: var(--space-height);
+}
+/* End Features */
