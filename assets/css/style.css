@@ -319,3 +319,64 @@ header .links ul li:not(:last-child) a {
   }
 }
 /* End Services */
+
+/* Start Portfolio */
+.portfolio {
+  padding: var(--p-y) 0;
+  background-color: var(--section-background-color);
+}
+
+.portfolio .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.portfolio .content .card {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.portfolio .content .card img {
+  max-width: 100%;
+}
+
+.portfolio .content .card img:hover {
+  transform: scale(1.1);
+  transition: var(--transition-duration) linear;
+  cursor: pointer;
+}
+
+.portfolio .content .card .info {
+  padding: 20px;
+}
+
+.portfolio .content .card .info h3 {
+  margin: 0;
+}
+
+.portfolio .content .card .info p {
+  margin-bottom: 0;
+  color: var(--gray-color);
+  line-height: var(--space-height);
+}
+
+.portfolio .container .btn a {
+  display: block;
+  margin: 50px auto;
+  max-width: 180px;
+  text-decoration: none;
+  padding: 8px 13px;
+  font-size: 20px;
+  font-weight: 800;
+  user-select: none;
+  color: var(--secondary-color);
+  box-shadow: var(--secondary-color) 0 0px 0px 1px inset;
+}
+
+.portfolio .container .btn a:hover {
+  color: var(--main-color);
+  box-shadow: var(--secondary-color) 0 50px 0px 1px inset;
+}
+/* End Portfolio */
