@@ -473,3 +473,55 @@ header .links ul li:not(:last-child) a {
   color: var(--gray-color);
 }
 /* End About */
+
+/* Start Contact */
+.contact {
+  padding: var(--p-y) 0;
+  background-color: var(--section-background-color);
+}
+
+.contact .info {
+  text-align: center;
+  padding: var(--p-y) 0;
+}
+
+.contact .info .label {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--secondary-color);
+  letter-spacing: -3px;
+  margin-bottom: 15px;
+}
+
+.contact .info .link {
+  display: block;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.contact .info .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .contact .info .label,
+  .contact .info .link {
+    font-size: 25px;
+  }
+}
+
+.contact .info .social i {
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+
+.contact .info .social i:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+/* End Contact */
